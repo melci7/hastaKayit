@@ -2,32 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 30px;
+}
+.div--container {
+  display: flex;
+  max-width: 600px;
+  min-width: 200px;
+  width: 30%;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.div--patientName {
+  margin-top: 20px;
+}
+
+.div--newPatient {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.newPatient-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  font-size: 12px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  max-height: 600px;
+  max-width: 1540px;
+  gap: 10px;
+}
+
+button {
+  margin-right: 0;
+  background-color: #30bccc;
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  width: 100%;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #155e75;
+}
+.header-h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .div--container {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
   }
 }
