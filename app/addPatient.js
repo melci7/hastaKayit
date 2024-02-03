@@ -87,7 +87,7 @@ export default function AddPatient() {
                         <InputText />
                     </div>
                 </div>
-                <button>Hastayı Kaydet</button>
+                <button className="green-button">Hastayı Kaydet</button>
             </div>
         </div>
     );

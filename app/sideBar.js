@@ -51,7 +51,7 @@ export default function SideBar() {
                         <InputTextarea rows={6} />
                     </div>
                 </div>
-                <button>Hasta Sahibini Kaydet</button>
+                <button className="green-button">Hasta Sahibini Kaydet</button>
             </div>
         </div>
 
