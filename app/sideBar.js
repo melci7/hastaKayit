@@ -1,13 +1,9 @@
 "use client";
-import { Button } from "primereact/button";
 import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 
-import Select from "react-select";
-
-export default function SideBar(props) {
-    function addPatient() { }
-
+export default function SideBar() {
+    
     const options = [
         { value: "dog", label: "Köpek" },
         { value: "cat", label: "Kedi" },
@@ -15,8 +11,6 @@ export default function SideBar(props) {
 
     return (
         <div>
-
-
             <div className="div--newPatient">
                 <div>
                     <h3 className="newPatient-header">Yeni Hasta Sahibi</h3>

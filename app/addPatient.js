@@ -1,6 +1,4 @@
 "use client";
-import { Button } from "primereact/button";
-import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 import Select from "react-select";
 import React, { useState } from "react"
@@ -32,14 +30,7 @@ export default function AddPatient() {
         { value: "kisirdegil", label: "Kısır Değil" },
     ];
 
-    function getDate() {
-        const today = new Date();
-        const month = today.getMonth() + 1;
-        const year = today.getFullYear();
-        const date = today.getDate();
-        return `${month}/${date}/${year}`;
-    }
-    const [date, setDate] = useState(new Date());
+    const date = new Date()
     const fullDate = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
     const [selectedOption, setSelectedOption] = useState("");
 

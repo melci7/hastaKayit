@@ -1,9 +1,5 @@
 "use client";
-
-
-import Image from "next/image";
 import SideBar from "./sideBar";
-import { FcAbout } from "react-icons/fc";
 import AddPatient from "./addPatient";
 import Select from "react-select";
 import React, { useState } from "react"
